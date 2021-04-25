@@ -19,22 +19,22 @@
 <div class="formType">
     <h1>Register here</h1>
     <fieldset>
-        <label for="username">Name:</label>
+        <label for="username">Username (4-10 symbols):</label>
         <input type="text" id="username" name="username" ng-model="username">
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" ng-model="email">
 
-        <label for="personalCode">Personal Code:</label>
+        <label for="personalCode">Personal Code(mandatory):</label>
         <input type="text" id="personalCode" name="personalCode" ng-model="personalCode">
 
-        <label for="address">Address:</label>
+        <label for="address">Address(mandatory):</label>
         <input type="text" id="address" name="address" ng-model="address">
 
-        <label for="favouriteBook">Favorite Book:</label>
+        <label for="favouriteBook">Favourite Book:</label>
         <input type="text" id="favouriteBook" name="favouriteBook" ng-model="favouriteBook">
     </fieldset>
-    <button type="submit" ng-click="submitUserRegistration()">Register</button>
+    <button type="submit" ng-click="submitUserRegistration()">Submit registration</button>
 </div>
 </body>
 </html>

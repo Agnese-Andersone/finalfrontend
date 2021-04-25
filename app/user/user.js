@@ -5,7 +5,8 @@ angular.module('myApp.user', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/user', {
             templateUrl: 'user/user.html',
-            controller: 'UserCtrl'
+            controller: 'UserCtrl',
+            styleUrls: ['./user/css/main.scss']
         });
     }])
 
@@ -34,7 +35,7 @@ angular.module('myApp.user', ['ngRoute'])
 
                     setTimeout(function(){
                         errorDiv.style.display = 'none';
-                    },3000);
+                    },5000);
 
 
                 }else{
@@ -44,7 +45,7 @@ angular.module('myApp.user', ['ngRoute'])
 
                     setTimeout(function(){
                         infoDiv.style.display = 'none';
-                    },3000);
+                    },5000);
 
                 }
             }).catch(function (error) {
